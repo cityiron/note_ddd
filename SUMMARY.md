@@ -1,7 +1,6 @@
 # Table of contents
 
 * [note\_ddd](README.md)
-* [汉化](han-hua.md)
 
 ## 笔记 <a id="note"></a>
 
@@ -13,8 +12,4 @@
 
 * [聚合根](collect/aggregates/README.md)
   * [乐观并发操作](https://www.jamesmichaelhickey.com/optimistic-concurrency/)
-
-## 收藏
-
-* [Untitled](shou-cang/untitled.md)
 
