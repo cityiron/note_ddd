@@ -6,7 +6,8 @@
 
 ## 汉化 <a id="hh"></a>
 
-* [DDD聚合：乐观并发](hh/ddd-optimistic-concurrency.md)
+* [聚合根](hh/aggregates/README.md)
+  * [DDD聚合：乐观并发](hh/aggregates/ddd-optimistic-concurrency.md)
 
 ## 收藏 <a id="collect"></a>
 

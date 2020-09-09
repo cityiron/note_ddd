@@ -12,7 +12,7 @@ description: 'https://www.jamesmichaelhickey.com/optimistic-concurrency/'
 
 我们研究了如何使用聚合根来对一致性边界建模。特别是，我们在时间跟踪应用程序中创建了对时间表应用更改的边界。
 
-![oc.01](../.gitbook/assets/image.png)
+![oc.01](../../.gitbook/assets/image.png)
 
 这种方法帮助我们更好地推理和管理与时间表业务概念相关的重要业务规则。我们系统的所有其他部分必须通过时间表集合——就像一个网关。
 
@@ -26,7 +26,7 @@ description: 'https://www.jamesmichaelhickey.com/optimistic-concurrency/'
 
 因此，这两种操作中只有一种能够成功。但是，考虑到标准的实施，他们都将获得成功。
 
-![oc.02](../.gitbook/assets/image%20%281%29.png)
+![oc.02](../../.gitbook/assets/image%20%281%29.png)
 
 我们如何解决这个问题，使我们的“时间表不能超过40小时工作”的不变量永远不会被打破?
 
@@ -42,7 +42,7 @@ description: 'https://www.jamesmichaelhickey.com/optimistic-concurrency/'
 
 但是，这种方法的性能很差，而且在某种程度上，我们只是用“蛮力”锁住了所有东西，这很幼稚。
 
-![oc.03](../.gitbook/assets/image%20%282%29.png)
+![oc.03](../../.gitbook/assets/image%20%282%29.png)
 
 ### 乐观并发
 
@@ -52,11 +52,11 @@ description: 'https://www.jamesmichaelhickey.com/optimistic-concurrency/'
 
 然后，每当回写聚合时，就根据数据存储对版本进行测试。如果版本不同步\(例如，在处理这个操作时，已经有其他人写入了存储\)，那么我们的操作就会失败。
 
-![oc.04](../.gitbook/assets/image%20%283%29.png)
+![oc.04](../../.gitbook/assets/image%20%283%29.png)
 
 这允许一种有趣的失败模式，其中失败的操作可以重新尝试。只要它的操作在数据存储中的更新仍然有意义。
 
-![oc.05](../.gitbook/assets/image%20%284%29.png)
+![oc.05](../../.gitbook/assets/image%20%284%29.png)
 
 ### 如何实现它?
 
